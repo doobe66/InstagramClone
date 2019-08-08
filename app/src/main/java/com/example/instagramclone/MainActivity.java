@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnGetAllData;
     private String allKickBoxers;
     private TextView txtGetAllData;
+    private Button btnTransition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         txtGetData = findViewById(R.id.txtGetData);
         txtGetAllData = findViewById(R.id.txtGetAllData);
+
+        btnTransition = findViewById(R.id.btnNextActivity);
 
         txtGetData.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +96,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        btnTransition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     @Override
